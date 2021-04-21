@@ -17,7 +17,39 @@
 </head>
 <body>
     
+    <div id="root">
+        <!-- container -->
+        <div class="container">
+            
+            <!-- logo -->
+            <div class="item-container">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <!-- end logo  -->
 
+            <!-- input and button -->
+            <div class="item-container">
+                <div class="input-container">
+                    <input type="text" placeholder="Nuovo Todo" v-model="userInput" @keyup.enter="addTodo">
+                    <button @click="addTodo" class="btn">Aggiungi</button>
+                </div>
+            </div>
+            <!-- end input and button  -->
+                
+            <!-- todo list  -->
+            <div class="todo-container">
+                <ul class="todo-list">
+                    <li v-for="(elements, index) in todos">{{ elements }}
+                        <span @click="deleteToDo(index)" class="delete"><i class="fas fa-times"></i></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- end todo list  -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <!-- JS  -->
     <script src="js/script.js"></script>
 </body>
 </html>

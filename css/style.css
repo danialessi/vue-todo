@@ -3,3 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* logo  */
+.item-container {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+}
+
+.item-container img {
+    width: 100%;
+}
+/* end logo  */
+
+/* input and button  */
+.input-container {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+/* end input and button  */
+
+/* todo list  */
+.todo-container {
+    background-color: rgb(236, 235, 235);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.todo-list {
+    padding: 20px;
+}
+
+.todo-list li {
+    list-style-type: none;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.delete {
+    float: right;
+    cursor: pointer;
+}
+/* end to do list  */
