@@ -5,6 +5,7 @@
 var app = new Vue ({
     el: '#root',
     data: {
+        isActive: false,
         userInput: '',
         todos: [
             'fare i compiti',
@@ -17,6 +18,7 @@ var app = new Vue ({
             if (this.userInput.length > 0) {
                 this.todos.push(this.userInput);
                 this.userInput = '';
+                this.isActive = true;
             }
         },
         deleteToDo(index) {

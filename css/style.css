@@ -60,6 +60,17 @@ input {
     padding: 10px;
 }
 
+.add-green {
+    animation-name: greenToAdd;
+    animation-duration: 1s;
+}
+
+@keyframes greenToAdd {
+    0% {background-color: rgb(236, 235, 235);}
+    50% {background-color: lime;}
+    100% {background-color: rgb(236, 235, 235);}
+}
+
 .delete {
     float: right;
     cursor: pointer;

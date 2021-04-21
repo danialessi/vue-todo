@@ -39,7 +39,7 @@
             <!-- todo list  -->
             <div class="todo-container">
                 <ul class="todo-list">
-                    <li v-for="(elements, index) in todos">{{ elements }}
+                    <li :class="{ 'add-green': isActive }" v-for="(elements, index) in todos">{{ elements }}
                         <span @click="deleteToDo(index)" class="delete"><i class="fas fa-times"></i></span>
                     </li>
                 </ul>
